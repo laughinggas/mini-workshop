@@ -9,6 +9,6 @@ In order to get a local copy of this repository, use the following instructions(
 6. Run `lake exe cache get` .
 7. Launch VSCode, either through your application menu or by typing code .. (MacOS users need to take a one-off [extra step](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) to be able to launch VS Code from the command line.)
 8. If you launched VS Code from a menu, on the main screen, or in the File menu, click "Open folder" (just "Open" on a Mac), and choose the folder mathematics_in_lean (not one of its subfolders).
-9. Using the file explorer on the left-hand side, explore everything you want. Open the file Basic.lean. Make sure it compiles (all the vertical orange lines disappear).
+9. Using the file explorer on the left-hand side, explore everything you want. Open the file Basic.lean inside the folder `MiniWorkshop`. Make sure it compiles (all the vertical orange lines disappear).
 
 Happy Leaning!
