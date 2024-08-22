@@ -3,7 +3,7 @@ This is a mini workshop designed to introduce the beginner-level user to Lean 4.
 In order to get a local copy of this repository, use the following instructions(as taken from the official website of Lean):
 1. Open a terminal.
 2. If you have not logged in since you installed Lean and mathlib, then you may need to first type source ~/.profile or source ~/.bash_profile depending on your OS. If you are on Windows, and don't know how to do this, another option is to restart your computer.
-3. Go to the directory where you would like this package to live. You do not need to create a new folder yourself, the next command will create a mathematics_in_lean (replace with what you would like to name the folder) subfolder for you.
+3. Go to the directory where you would like this package to live. You do not need to create a new folder yourself, the next command will create a `mathematics_in_lean` (replace with what you would like to name the folder) subfolder for you.
 4. Run `git clone https://github.com/laughinggas/mini-workshop` .
 5. Run `cd mathematics_in_lean` .
 6. Run `lake exe cache get` .
