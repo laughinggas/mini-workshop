@@ -4,6 +4,8 @@ import Mathlib.Data.ZMod.Basic
   This is a very quick crash course. To know more, please read Mathematics in Lean (link?)
   or Theorem Proving in Lean. You can also ask for help on the Zulip chat : https://leanprover.zulipchat.com/ -/
 
+-- First, press Alt and Z to make sure everything fits on your screen.
+
 -- Let us start with understanding what types are.
 -- Every element in Lean has a unique `Type`.
 -- Let us check the inherent `Type` of `0`.
