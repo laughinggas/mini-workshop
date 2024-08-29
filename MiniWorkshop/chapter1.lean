@@ -18,11 +18,11 @@ variable {n : ℕ} [NeZero n]
 
 lemma pred'_eq_iff_eq_succ' (x y : Fin n) : x - 1 = y ↔ x = y + 1 := by
 -- we need to split it into 2 implications
-refine' ⟨_, _⟩
+refine' ⟨_, _⟩ -- get `⟨` by pressing \ and <
 -- now we have 2 goals: press \ and . to get `·`. It focuses on the first goal.
 · intro h -- now we have a hypothesis, `intro` introduces it as a hypothesis instead of an implication
   rw [← h, sub_add_cancel] -- How can we now solve it? We first begin by rewriting `y` in terms of `x` using `h` in reverse, then we rewrite the lemma `sub_add_cancel`
-· sorry -- can you complete this using `add_sub_cancel`?
+· sorry -- can you complete this using `add_sub_cancel_right`?
 
 -- Hmm, the above lemma seems fairly obvious, shouldn't this already be in the library?
 -- Can I check if it is in the library without looking at mathlib documentation? Yep! Just try `apply?` after `by`.
@@ -36,7 +36,10 @@ lemma pred'_ne_self (x : Fin (n + 1)) : x - 1 ≠ x := by
 -- This simplifies the expression vastly, but it does not catch that `n` must be nonzero. This fact is given by the lemma `NeZero.ne`.
 -- To give an additional helpful lemma `h` or fact to `simp`, you can try `simp [h]`.
 -- It is also good practice to know exactly which lemmas `simp` found. We get this by looking at `simp?`.
-  sorry
+sorry
+
+-- One can also tag lemmas with simp using `@[simp]`, and then they can be used-- try it with the previous lemma `succ'_eq_iff_eq_pred'`
+lemma succ'_eq_iff_eq_pred'' (x y : Fin n) : x + 1 = y ↔ x = y - 1 := by sorry
 
 lemma succ'_ne_self (x : Fin (n + 1)) : x + 1 ≠ x := by
 -- what does `apply?` give you here?
